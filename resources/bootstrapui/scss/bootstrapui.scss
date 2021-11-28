@@ -1,0 +1,45 @@
+// Fixes issue with a:visited color overwriting bootstrap button color
+.bs-ui-button .bs-ui-iconLayers, .bs-ui-button .bs-ui-icon, .bs-ui-buttonLabel {
+  color: inherit !important;
+}
+
+@media (max-width: 767px) {
+  .bs-ui-hideMobile, .bs-ui-buttonHideLabelMobile > .bs-ui-buttonLabel {
+    display: block;
+    position: absolute;
+    clip: rect(1px,1px,1px,1px);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden
+  }
+}
+
+.form-check-inline .invalid-feedback, .form-check-inline .valid-feedback {
+  margin-left: 1rem;
+  margin-top: -0.04rem;
+}
+
+ul.nav {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+ul.nav-button {
+  display: inline-block;
+}
+
+li.nav-item {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  .dropdown-item {
+    line-height: 1.5;
+  }
+}
+
+.menu-icon {
+  margin-right: 0.5rem;
+}

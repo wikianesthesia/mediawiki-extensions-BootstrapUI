@@ -1,0 +1,34 @@
+{
+  "name": "BootstrapUI",
+  "namemsg": "bootstrapui-extensionname",
+  "version": "0.1.0",
+  "author": [
+    "Chris Rishel"
+  ],
+  "license-name": "GPL-3.0-or-later",
+  "url": "https://www.mediawiki.org/wiki/Extension:BootstrapUI",
+  "descriptionmsg": "bootstrapui-desc",
+  "type": "other",
+  "requires": {
+    "MediaWiki": ">= 1.35.0",
+    "extensions": {
+      "Bootstrap": "~4.5"
+    }
+  },
+  "AutoloadNamespaces": {
+    "BootstrapUI\\": "src/"
+  },
+  "Hooks": {
+    "SetupAfterCache": "BootstrapUI\\Hooks\\SetupAfterCache::callback"
+  },
+  "MessagesDirs": {
+    "BootstrapUI": [
+      "i18n"
+    ]
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "resources",
+    "remoteExtPath": "PracticeGroups/resources"
+  },
+  "manifest_version": 2
+}

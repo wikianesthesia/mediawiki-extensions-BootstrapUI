@@ -1,0 +1,12 @@
+{
+  "@metadata": {
+    "authors": [
+      "Chris Rishel"
+    ]
+  },
+  "bootstrapui": "BootstrapUI",
+  "bootstrapui-extensionname": "BootstrapUI",
+  "bootstrapui-desc": "Adds widgets for the Bootstrap framework",
+  "bootstrapui-close": "Close",
+  "bootstrapui-menu": "Menu"
+}
