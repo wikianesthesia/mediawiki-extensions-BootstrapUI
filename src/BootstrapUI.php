@@ -60,6 +60,32 @@ class BootstrapUI {
 
 
     /*
+     * BadgeWidget constants
+     */
+    public const BADGE_STYLE_PRIMARY = 'badge-primary';
+    public const BADGE_STYLE_SECONDARY = 'badge-secondary';
+    public const BADGE_STYLE_SUCCESS = 'badge-success';
+    public const BADGE_STYLE_DANGER = 'badge-danger';
+    public const BADGE_STYLE_WARNING = 'badge-warning';
+    public const BADGE_STYLE_INFO = 'badge-info';
+    public const BADGE_STYLE_LIGHT = 'badge-light';
+    public const BADGE_STYLE_DARK = 'badge-dark';
+
+    public const DEFAULT_BADGE_STYLE = self::BADGE_STYLE_PRIMARY;
+
+    public const VALID_BADGE_STYLES = [
+        self::BADGE_STYLE_PRIMARY,
+        self::BADGE_STYLE_SECONDARY,
+        self::BADGE_STYLE_SUCCESS,
+        self::BADGE_STYLE_DANGER,
+        self::BADGE_STYLE_WARNING,
+        self::BADGE_STYLE_INFO,
+        self::BADGE_STYLE_LIGHT,
+        self::BADGE_STYLE_DARK,
+    ];
+
+
+    /*
      * ButtonWidget constants
      */
     public const BUTTON_SIZE_SMALL = 'btn-sm';
@@ -147,6 +173,10 @@ class BootstrapUI {
 
     public static function alertWidget( array $config = [], string $contents = '' ): AlertWidget {
         return new AlertWidget( $config, $contents );
+    }
+
+    public static function badgeWidget( array $config = [], string $contents = '' ): BadgeWidget {
+        return new BadgeWidget( $config, $contents );
     }
 
     public static function buttonGroupWidget( array $config = [], string $contents = '' ): ButtonGroupWidget {

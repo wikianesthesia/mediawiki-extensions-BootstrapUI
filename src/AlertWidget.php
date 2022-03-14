@@ -23,7 +23,7 @@ class AlertWidget extends Widget {
     ];
 
     /**
-     * Stores the contents of the button group
+     * Stores the contents of the alert
      * @var string
      */
     protected $contents = null;
@@ -139,7 +139,7 @@ class AlertWidget extends Widget {
         if( in_array( $alertStyle, BootstrapUI::VALID_ALERT_STYLES ) ) {
             $this->attribs[ 'class' ] .= $alertStyle;
         } else {
-            $this->attribs[ 'class' ] .= static::DEFAULT_STYLE;
+            $this->attribs[ 'class' ] .= BootstrapUI::DEFAULT_ALERT_STYLE;
         }
     }
 
